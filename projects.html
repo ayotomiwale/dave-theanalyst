@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Data Analyst" name="description" />
+    <meta content="data,analyst" name="keywords" />
+    <meta content="website" property="og:type" />
+    <meta content="Abioye David" property="og:title" />
+    <meta content="assets/images/me.jpg" property="og:image" />
+    <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <!--  FontAwesome from a CDN  -->
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        referrerpolicy="no-referrer" rel="stylesheet" />
+
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <script defer src="assets/js/main.js"></script>
+
+    <title>Portfolio</title>
+</head>
+
+<body class="main-body">
+    <nav class="site-nav">
+        <div class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="workexperience.html">Work experience</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="mobile-nav-top">
+            <a href="/">
+                <h2 class="text-2xl">YourName</h2>
+            </a>
+
+            <button class="hamburger-menu" onclick="openNav()">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav" id="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="workexperience.html">Work experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+                    <button onclick="closeNav()" class="close-mobile-nav">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <p>During my free time, I like to experiment & work on random dataset; sometimes to 
+            learn more or just to fix a problem.</p>
+        <p>Here are some of the projects I have worked on:</p>
+
+        <h2 class="mt-6 text-2xl">Selected Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-name="alpha">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/stroke.jpg" />
+                <div class="project-description">
+                    <h3>Machine Learning Project: Stroke Prediction Analysis</h3>
+
+                    <h4>Objective</h4>
+                    <p>To develop and evaluate machine learning models for predicting strokes
+                         based on a comprehensive dataset, ultimately identifying the most
+                          effective predictive algorithm.
+                    </p>
+
+                    <h4>Description</h4>
+                    <p>
+                        In this machine learning endeavor, I undertook a critical task of modeling different algorithms to predict strokes using a diverse dataset. The primary objective was to discern the performance of various machine learning models and pinpoint the most accurate and efficient predictive algorithm.
+                    </p>
+
+                    <a href="https://drive.google.com/file/d/17dND1IojPLiD_2MFS9yCVt5QBxwjGJFn/view?usp=drive_link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card" data-name="beta">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/cost-house.jpg" />
+                <div class="project-description">
+                    <h3>Cost of Rent in Lagos, Nigeria</h3>
+                    <p>The objective of this project was to conduct a comprehensive analysis of 
+                        the cost of house rent in Lagos, Nigeria, unraveling the intricate
+                         factors influencing pricing dynamics and providing valuable
+                          insights for residents, property owners, and potential investors.
+                        </p>
+                    <a href="cost-house.html">View Project</a>
+                </div>
+            </div>
+            <div class="project-card" data-name="omega">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/data-project.jpg" />
+                <div class="project-description">
+                    <h3>Unveiling Udemy's Educational Landscape</h3>
+                    <p>Embarking on the Udemy Data Analytics Project, I sought to reimagine the exploration of course data initially handled with Excel and PowerBI by a fellow Udemy data team member. Leveraging Python and PowerBI, my focus narrowed to four pivotal course categories: Business Finance, Graphics Design, Musical Instruments, and Web Development.
+
+                        The project's core objectives included scrutinizing the course landscape within each subject area, assessing subscriber counts, evaluating course ratings, and delving into revenue generation. Beyond these metrics, the endeavor extended to identifying keywords associated with top-rated and highly sought-after courses in each category.
+                        </p>
+                        
+                    <a href="https://drive.google.com/file/d/1YuYqZBJFzYUuQgoZIiKHyEySHpEPwq94/view?usp=drive_link">View Project</a>
+                </div>
+            </div>
+        </div>
+
+    
+    </main>
+    <footer>
+        &copy; <span id="date"></span> Abioye David Ajibola
+    </footer>
+</body>
+
+</html>

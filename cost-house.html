@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="Data Analyst" name="description" />
+        <meta content="data,analyst" name="keywords" />
+        <meta content="website" property="og:type" />
+        <meta content="Abioye David" property="og:title" />
+
+      
+        <title>Cost of  Rent in Lagos, Nigeria.</title>
+        <meta name="description" content="Analysing real estate data to identify factors that determine the cost of rent of residential properties in Lagos, Nigeria and its effect."/>
+        <meta property="og:title" content="Cost of  Rent in Lagos, Nigeria."/>
+        <meta property="og:description" content="Analysing real estate data to identify factors that determine the cost of rent of residential properties in Lagos, Nigeria and its effect."/>
+       
+        <meta property="og:type" content="article"/>
+      
+        <link rel="mask-icon" href="/static/images/brand/safari-pinned-tab-new.svg" color="#2962ff"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/cost-house.css">
+        <meta name="msapplication-TileColor" content="#ffffff"/>
+        <meta name="theme-color" content="#f6f7fb"/>
+        <meta property="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:title" content="Cost of  Rent in Lagos, Nigeria."/>
+        <meta property="twitter:description" content="Analysing real estate data to identify factors that determine the cost of rent of residential properties in Lagos, Nigeria and its effect."/>
+       
+        <style>
+            /* Monkai theme */
+            .hljs {
+                display: block;
+                overflow-x: auto;
+                padding: .5em;
+                background: #23241f
+            }
+
+            .hljs,.hljs-subst,.hljs-tag {
+                color: #f8f8f2
+            }
+
+            .hljs-emphasis,.hljs-strong {
+                color: #a8a8a2
+            }
+
+            .hljs-bullet,.hljs-link,.hljs-literal,.hljs-number,.hljs-quote,.hljs-regexp {
+                color: #ae81ff
+            }
+
+            .hljs-code,.hljs-section,.hljs-selector-class,.hljs-title {
+                color: #a6e22e
+            }
+
+            .hljs-strong {
+                font-weight: 700
+            }
+
+            .hljs-emphasis {
+                font-style: italic
+            }
+
+            .hljs-attr,.hljs-keyword,.hljs-name,.hljs-selector-tag {
+                color: #f92672
+            }
+
+            .hljs-attribute,.hljs-symbol {
+                color: #66d9ef
+            }
+
+            .hljs-class .hljs-title,.hljs-params {
+                color: #f8f8f2
+            }
+
+            .hljs-addition,.hljs-built_in,.hljs-builtin-name,.hljs-selector-attr,.hljs-selector-id,.hljs-selector-pseudo,.hljs-string,.hljs-template-variable,.hljs-type,.hljs-variable {
+                color: #e6db74
+            }
+
+            .hljs-comment,.hljs-deletion,.hljs-meta {
+                color: #75715e
+            }
+
+            /* Monkai theme ends */
+        </style>
+        <link rel="preload" as="image" href="https://cdn.hashnode.com/res/hashnode/image/upload/v1654687016090/Kko2TLad9.png?w=400&amp;h=400&amp;fit=crop&amp;crop=faces&amp;auto=compress,format&amp;format=webp"/>
+        <link rel="preload" as="image" href="https://cdn.hashnode.com/res/hashnode/image/unsplash/q4ZBGVzJskE/upload/v1664053879066/ydmKs58L4.jpeg?w=1600&amp;h=840&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp"/>
+        <meta name="next-head-count" content="27"/>
+        <style>
+            #nprogress {
+                pointer-events: none
+            }
+
+            #nprogress .bar {
+                background: #29d;
+                position: fixed;
+                z-index: 1031;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 2px
+            }
+
+            #nprogress .peg {
+                display: block;
+                position: absolute;
+                right: 0;
+                width: 100px;
+                height: 100%;
+                box-shadow: 0 0 10px #29d,0 0 5px #29d;
+                opacity: 1;
+                -webkit-transform: rotate(3deg) translate(0,-4px);
+                -ms-transform: rotate(3deg) translate(0,-4px);
+                transform: rotate(3deg) translate(0,-4px)
+            }
+
+            #nprogress .spinner {
+                display: block;
+                position: fixed;
+                z-index: 1031;
+                top: 15px;
+                right: 15px
+            }
+
+            #nprogress .spinner-icon {
+                width: 18px;
+                height: 18px;
+                box-sizing: border-box;
+                border: solid 2px transparent;
+                border-top-color: #29d;
+                border-left-color: #29d;
+                border-radius: 50%;
+                -webkit-animation: nprogress-spinner .4s linear infinite;
+                animation: nprogress-spinner .4s linear infinite
+            }
+
+            .nprogress-custom-parent {
+                overflow: hidden;
+                position: relative
+            }
+
+            .nprogress-custom-parent #nprogress .bar,.nprogress-custom-parent #nprogress .spinner {
+                position: absolute
+            }
+
+            @-webkit-keyframes nprogress-spinner {
+                0% {
+                    -webkit-transform: rotate(0)
+                }
+
+                100% {
+                    -webkit-transform: rotate(360deg)
+                }
+            }
+
+            @keyframes nprogress-spinner {
+                0% {
+                    transform: rotate(0)
+                }
+
+                100% {
+                    transform: rotate(360deg)
+                }
+            }
+        </style>
+        <script async="" src="https://ping.hashnode.com/gtag/js?id=G-72XG3F8LNJ"></script>
+        <script type="text/javascript">
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                window.dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+        </script>
+         <style id="__jsx-1356050881">
+            html {
+                --font-inter: __Inter_a64ecd;
+                --font-plus-jakarta-sans: __Plus_Jakarta_Sans_47178e
+            }
+        </style>
+         <link href="assets/css/main.css" rel="stylesheet" />
+
+         <script defer src="assets/js/main.js"></script>
+    </head>
+    <body  class="main-body"">
+
+        <nav class="site-nav">
+            <div class="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="workexperience.html">Work experience</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="mobile-nav-top">
+                <a href="/">
+                    <h2 class="text-2xl">David Ajibola</h2>
+                </a>
+    
+                <button class="hamburger-menu" onclick="openNav()">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+    
+            <div class="mobile-nav" id="mobile-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="workexperience.html">Work experience</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+    
+                    <li>
+                        <button onclick="closeNav()" class="close-mobile-nav">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <input type="hidden" id="hn-user"/>
+        <style id="__jsx-1356050881">
+            html {
+                --font-inter: __Inter_a64ecd;
+                --font-plus-jakarta-sans: __Plus_Jakarta_Sans_47178e
+            }
+        </style>
+        <div id="__next">
+            <div class="bg-white dark:bg-slate-900" data-theme="light">
+ 
+                <header class="blog-header z-50 w-full border-b relative transform-none md:sticky md:top-0 md:left-0 md:backdrop-blur-lg border-black/10 bg-white bg-opacity-70 dark:border-white/10 dark:bg-slate-900 dark:bg-opacity-70">
+                    <div class="container mx-auto px-2 md:px-4 md:py-1 2xl:px-10">
+                       
+                        </div>
+                       
+                           
+                        </div>
+                        
+                        </div>
+                    </div>
+                </header>
+                <div class="blog-post-area relative z-40">
+                    <main class="blog-post-detail-card pb-24">
+                        <article>
+                            <div class="blog-article-page container relative mx-auto grid grid-cols-8">
+                                <div class="col-span-full lg:col-span-6 lg:col-start-2">
+                                    <div class="relative">
+                                        <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative">
+                                            <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;padding-top:52.5%"></span>
+                                            <img alt="Cost of  Rent in Lagos, Nigeria." src="assets/images/cost-house-1.jpeg" decoding="async" data-nimg="responsive" class="mb-0 block w-full" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;background-size:cover;background-position:0% 0%;filter:blur(0.5px);background-image:url(&quot;https://cdn.hashnode.com/res/hashnode/image/unsplash/q4ZBGVzJskE/upload/v1664053879066/ydmKs58L4.jpeg?w=400&amp;h=210&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp&amp;fm=blurhash&quot;)"/>
+                                            <noscript>
+                                                <img alt="Cost of  Rent in Lagos, Nigeria." decoding="async" data-nimg="responsive" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" class="mb-0 block w-full" src="assets/images/cost-house-1.jpeg"/>
+                                            </noscript>
+                                        </span>
+                                       
+                                        
+                                    </div>
+                                    <div class="mt-6 break-words px-4 text-center font-heading text-3xl font-extrabold text-slate-900 dark:text-white md:mt-10 md:px-5 md:text-4xl lg:px-8 xl:px-20 xl:text-5xl mb-5">
+                                        <h1 class="leading-snug" data-query="post-title">Cost of  Rent in Lagos, Nigeria.</h1>
+                                    </div>
+                                    <div class="mb-8 px-4 text-center font-heading md:mb-14 md:px-5 lg:px-8 xl:px-20">
+                                        <h2 class="text-2xl leading-snug text-slate-700 dark:text-slate-400 md:text-3xl xl:text-3xl">Analysing real estate data to identify factors that determine the cost of rent of residential properties in Lagos, Nigeria and its effect.</h2>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="blog-content-wrapper article-main-wrapper container relative z-30 mx-auto grid grid-flow-row grid-cols-8 xl:gap-6 2xl:grid-cols-10">
+                                <section class="blog-content-main z-20 col-span-8 mb-10 px-4 md:z-10 lg:col-span-6 lg:col-start-2 lg:px-0 xl:col-span-6 xl:col-start-2 2xl:col-span-6 2xl:col-start-3">
+                                    <div class="relative">
+                                        <div class="relative w-full overflow-hidden rounded-xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 mx-auto mb-10 max-w-[812px]">
+                                            <div class="pr-4 pb-4 max-h-[400px] overflow-hidden">
+                                                <h2 class="px-6 py-5 pb-4 text-lg font-semibold text-slate-800 dark:text-slate-100">
+                                                    <span>Table of contents</span>
+                                                </h2>
+                                                <ul class="pl-4 dark:border-slate-800">
+                                                    <li>
+                                                        <a href="#heading-introduction" aria-label="Introduction" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800">
+                                                            <div id="cada1a21-994a-4166-8e11-fe6378694472" class="w-full break-words py-2 text-base focus:outline-none text-slate-700  dark:text-slate-200">Introduction</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#heading-tools-used" aria-label="Tools Used" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800">
+                                                            <div id="1cf3147f-f557-491f-aa0a-a0a146ca17d4" class="w-full break-words py-2 text-base focus:outline-none text-slate-700  dark:text-slate-200">Tools Used</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#heading-data-source" aria-label="Data Source" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800">
+                                                            <div id="939a14e6-9032-4796-8b13-177e8171b2aa" class="w-full break-words py-2 text-base focus:outline-none text-slate-700  dark:text-slate-200">Data Source</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#heading-data-cleaning-and-preparation" aria-label="Data Cleaning and Preparation" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800">
+                                                            <div id="83322156-be2b-4b6c-ad18-20a02234a6d3" class="w-full break-words py-2 text-base focus:outline-none text-slate-700  dark:text-slate-200">Data Cleaning and Preparation</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#heading-exploratory-data-analysis" aria-label="Exploratory Data Analysis" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800">
+                                                            <div id="0de31e06-51c2-4522-9d00-acb2cd1b1cc1" class="w-full break-words py-2 text-base focus:outline-none text-slate-700  dark:text-slate-200">Exploratory Data Analysis</div>
+                                                        </a>
+                                                        <ul class="pl-4 dark:border-slate-800">
+                                                            <li>
+                                                                <a href="#heading-city" aria-label="City" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800 -mt-1">
+                                                                    <span class="text-slate-400 dark:text-slate-500">
+                                                                        <svg class="h-4 w-4 stroke-current" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M6.6665 4L10.6665 8L6.6665 12"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <div id="2fd3db24-b4d9-4e4b-812d-b342839e317c" class="w-full break-words py-2 text-base focus:outline-none text-slate-600 dark:text-slate-300">City</div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#heading-house-type" aria-label="House Type" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800 -mt-1">
+                                                                    <span class="text-slate-400 dark:text-slate-500">
+                                                                        <svg class="h-4 w-4 stroke-current" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M6.6665 4L10.6665 8L6.6665 12"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <div id="6c0edc39-3c59-4539-9565-967c67b5e455" class="w-full break-words py-2 text-base focus:outline-none text-slate-600 dark:text-slate-300">House Type</div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#heading-bed" aria-label="Bed" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800 -mt-1">
+                                                                    <span class="text-slate-400 dark:text-slate-500">
+                                                                        <svg class="h-4 w-4 stroke-current" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M6.6665 4L10.6665 8L6.6665 12"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <div id="163efb70-77ee-417a-8d47-deaeafa43055" class="w-full break-words py-2 text-base focus:outline-none text-slate-600 dark:text-slate-300">Bed</div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#heading-new" aria-label="New" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800 -mt-1">
+                                                                    <span class="text-slate-400 dark:text-slate-500">
+                                                                        <svg class="h-4 w-4 stroke-current" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M6.6665 4L10.6665 8L6.6665 12"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <div id="6dda9c1a-16fc-4758-beab-e23828e8f243" class="w-full break-words py-2 text-base focus:outline-none text-slate-600 dark:text-slate-300">New</div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#heading-hypothesis-tests" aria-label="Hypothesis Tests" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800 -mt-1">
+                                                                    <span class="text-slate-400 dark:text-slate-500">
+                                                                        <svg class="h-4 w-4 stroke-current" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M6.6665 4L10.6665 8L6.6665 12"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <div id="0c0add28-8bc1-4676-a33e-39cabecaaa0c" class="w-full break-words py-2 text-base focus:outline-none text-slate-600 dark:text-slate-300">Hypothesis Tests</div>
+                                                                </a>
+                                                                <ul class="pl-4 dark:border-slate-800">
+                                                                    <li>
+                                                                        <a href="#heading-city-1" aria-label="City" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800 -mt-1">
+                                                                            <span class="text-slate-400 dark:text-slate-500">
+                                                                                <svg class="h-4 w-4 stroke-current" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M6.6665 4L10.6665 8L6.6665 12"></path>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <div id="662b33a0-b42d-49f8-ba42-0e92df92db90" class="w-full break-words py-2 text-base focus:outline-none text-slate-600 dark:text-slate-300">City</div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#heading-house-type-1" aria-label="House Type" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800 -mt-1">
+                                                                            <span class="text-slate-400 dark:text-slate-500">
+                                                                                <svg class="h-4 w-4 stroke-current" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M6.6665 4L10.6665 8L6.6665 12"></path>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <div id="29063917-5886-4483-a965-79a320671be8" class="w-full break-words py-2 text-base focus:outline-none text-slate-600 dark:text-slate-300">House Type</div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#heading-bed-1" aria-label="Bed" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800 -mt-1">
+                                                                            <span class="text-slate-400 dark:text-slate-500">
+                                                                                <svg class="h-4 w-4 stroke-current" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M6.6665 4L10.6665 8L6.6665 12"></path>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <div id="846ed1b1-216f-42f1-b418-418157ebc9b7" class="w-full break-words py-2 text-base focus:outline-none text-slate-600 dark:text-slate-300">Bed</div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#heading-new-1" aria-label="New" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800 -mt-1">
+                                                                            <span class="text-slate-400 dark:text-slate-500">
+                                                                                <svg class="h-4 w-4 stroke-current" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M6.6665 4L10.6665 8L6.6665 12"></path>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <div id="12ab465c-a5d2-4f3a-9969-99ba0ee7e039" class="w-full break-words py-2 text-base focus:outline-none text-slate-600 dark:text-slate-300">New</div>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#heading-analysing-the-data" aria-label="Analysing the Data" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800">
+                                                            <div id="6339178c-94de-4d24-bc66-30a09628dc00" class="w-full break-words py-2 text-base focus:outline-none text-slate-700  dark:text-slate-200">Analysing the Data</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#heading-visualisation" aria-label="Visualisation" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800">
+                                                            <div id="7d2fa945-8927-400c-ba4b-92c25c718b20" class="w-full break-words py-2 text-base focus:outline-none text-slate-700  dark:text-slate-200">Visualisation</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#heading-conclusion" aria-label="Conclusion" class="mb-1 flex items-center gap-x-2 rounded-lg px-2 focus:outline-none hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-800 dark:focus:bg-slate-800">
+                                                            <div id="7697c1a7-b8eb-4d49-a7e4-8a58cc0b1944" class="w-full break-words py-2 text-base focus:outline-none text-slate-700  dark:text-slate-200">Conclusion</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div id="post-content-parent" class="relative mb-10 pb-14">
+                                            <div id="post-content-wrapper" class="prose prose-lg mx-auto mb-10 min-h-30 break-words dark:prose-dark xl:prose-xl">
+                                                <h2 id="heading-introduction">Introduction</h2>
+                                                <p>A couple of months ago I attended DataCamp's Data Radar, it was an exciting webinar and I enjoyed every session held and all the helpful information being shared particularly the session with Nick Singh when he spoke about doing a data analytics project that is personal to you, something that you are passionate about and that is relevant to you and your experiences and that is what has inspired this project.</p>
+                                                <p>House hunting in Lagos is the ghetto! From sketchy house agents that are only concerned with collecting their agency fees to the landlords that build clay houses and use POP and fine gates to deceive potential tenants but what never ceases to amaze me is the cost of renting these houses. In the past 3 years, I have had to move twice and have gone through that mental topsy-turvy way more than any human deserves to (sigh!) so, I decided to do a project, analysing real estate data to determine factors that affect the price and how these factors affect it, just to provide you with a little bit of background information and to prepare you for the plethora of "wahala" that awaits you if and whenever you plan on moving to Lagos state or a different area in Lagos.</p>
+                                                <h2 id="heading-tools-used">Tools Used</h2>
+                                                <ol>
+                                                    <li>
+                                                        <p>R studio</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Microsoft PowerBI</p>
+                                                    </li>
+                                                </ol>
+                                                <h2 id="heading-data-source">Data Source</h2>
+                                                <p>
+                                                    Data was scrapped from <a target="_blank" href="https://www.propertypro.ng/property-for-rent/in/lagos">propertypro.ng</a>
+                                                    , a real estate website that advertises co-working spaces, commercial properties, flats/apartments, houses and land for sale, rent and short letting in Nigeria. I filtered the available properties for only the ones located in Lagos state and scrapped the data (which includes the property's description, price (in Naira), location, number of bedrooms, baths and toilets) using the R package, rvest.
+                                                </p>
+                                                <p>Scrapped Data:</p>
+                                                <p>
+                                                    <img loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1663365520683/rEK-Dlqj2.JPG?auto=compress,format&format=webp" alt="Scrapped Data" class="image--center mx-auto"/>
+                                                </p>
+                                                <h2 id="heading-data-cleaning-and-preparation">Data Cleaning and Preparation</h2>
+                                                <p>I started the data cleaning process by first duplicating my scrapped data, having a duplicate of your original dataset is a data analytics good practice as it serves as a reference point at any time during the cleaning and preparation process. I focused my dataset on properties that were up for yearly rent by filtering out the properties with monthly, daily and per sqm payments and then, I began to clean individual columns, preparing the dataset for analysis. This involved the following steps:</p>
+                                                <ol>
+                                                    <li>
+                                                        <p>Cleaning the price, bed, baths and toilets column by removing suffixes like "/year", "beds", "baths" and "toilets" and then, converting the column to a numerical data type.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Creating the "city" column from the "location" column. This grouped the entire dataset into 43 different cities located in Lagos, Nigeria.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Filtering out properties not located in Lagos.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Filtering out non-residential properties.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Filtering out properties with prices less than 20,000 and greater than 50,000,000. The website's summary of the houses for rent showed that the minimum price is 20,000 and the max price is 50,000,000.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Creating the "house_type" column from the "description" column. This grouped the entire dataset into 8 categories; flats &amp;apartments, duplexes, maisonettes, mansions, self-contain, bungalows, penthouses and others. Others include properties with vague descriptions or uncommon house types eg "room &amp;parlour", and "townhouse".</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Creating the "new" column from the "description" column. This column indicates if the property is newly built or is an old building.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Dropping rows with missing values.</p>
+                                                    </li>
+                                                </ol>
+                                                <p>Cleaned and Processed:</p>
+                                                <p>
+                                                    <img loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1663439419960/nQJmeoec5.JPG?auto=compress,format&format=webp" alt="Cleaned and Processed"/>
+                                                </p>
+                                                <h2 id="heading-exploratory-data-analysis">Exploratory Data Analysis</h2>
+                                                <p>To explore the data, I started by summarising the price column which yielded the following results:</p>
+                                                <p>Min: 22,000</p>
+                                                <p>1st Quadrant: 650,000</p>
+                                                <p>Median: 1,400,000</p>
+                                                <p>Mean: 3,426,688</p>
+                                                <p>3rd Quadrant: 3,500,000</p>
+                                                <p>Max: 48,000,0000</p>
+                                                <p>The difference between the median and mean shows a positive skew and a histogram confirms the distribution of the price column is positively skewed.</p>
+                                                <p>
+                                                    <img loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1663441982136/8SxuVCEoj.png?auto=compress,format&format=webp" alt="propertypro1.png" class="image--center mx-auto"/>
+                                                </p>
+                                                <p>After this the distribution of the price column was explored based on the categorical variables in the dataset using box plots.</p>
+                                                <h4 id="heading-city">City</h4>
+                                                <p>
+                                                    <img loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1663443100075/Hantjm7vY.png?auto=compress,format&format=webp" alt="propertypro2.png"/>
+                                                </p>
+                                                <p>Ikoyi, Lekki and Victoria Island have distinctively higher median prices compared to other cities.</p>
+                                                <h4 id="heading-house-type">House Type</h4>
+                                                <p>
+                                                    <img loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1663444923981/JkvxxY81m.png?auto=compress,format&format=webp" alt="propertypro3.png" class="image--center mx-auto"/>
+                                                </p>
+                                                <p>Penthouses, Mansions and Maisonettes have higher median prices with Self Contain having the lowest median price.</p>
+                                                <h4 id="heading-bed">Bed</h4>
+                                                <p>
+                                                    <img loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1663446033813/CsN-FQD00.png?auto=compress,format&format=webp" alt="propertypro4.png"/>
+                                                </p>
+                                                <p>The median price of each bedroom increases with the number of bedrooms, with the exception of the 7-bedroom category.</p>
+                                                <h4 id="heading-new">New</h4>
+                                                <p>
+                                                    <img loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1663573060033/1T6b0Vg85.png?auto=compress,format&format=webp" alt="propertypro5.png"/>
+                                                </p>
+                                                <h3 id="heading-hypothesis-tests">Hypothesis Tests</h3>
+                                                <p>A hypothesis test was then carried out on each categorical variable to see if the cost of renting a house varies significantly across the different factors of that categorical variable (to determine if truly the price is affected by that categorical variable). Due to the skewed nature of the price distribution, a Kruskal-Walis test was carried out with:</p>
+                                                <ol>
+                                                    <li>
+                                                        <p>The null hypothesis, Ho states that M1 = M2 = M3 = … = Mk (i.e. the mean prices are equal throughout that category and hence the categorical variable does not affect the price).</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>An alternative hypothesis, Ha states that the mean price of at least 2 factors are different and hence the categorical variable affects the price</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>A confidence level of 95%</p>
+                                                    </li>
+                                                </ol>
+                                                <h4 id="heading-city-1">City</h4>
+                                                <p>Kruskal-Wallis chi-squared = 64379, df = 42, p-value &lt;2.2e-16</p>
+                                                <p>Interpretation: Rejects null hypothesis in favour of the alternative hypothesis.</p>
+                                                <h4 id="heading-house-type-1">House Type</h4>
+                                                <p>Kruskal-Wallis chi-squared = 28479, df = 7, p-value &lt;2.2e-16</p>
+                                                <p>Interpretation: Rejects null hypothesis in favour of the alternative hypothesis</p>
+                                                <h4 id="heading-bed-1">Bed</h4>
+                                                <p>Kruskal-Wallis chi-squared = 45265, df = 9, p-value &lt;2.2e-16</p>
+                                                <p>Interpretation: Rejects null hypothesis in favour of the alternative hypothesis.</p>
+                                                <h4 id="heading-new-1">New</h4>
+                                                <p>Kruskal-Wallis chi-squared = 356.55, df = 1, p-value &lt;2.2e-16</p>
+                                                <p>Interpretation: Rejects null hypothesis in favour of the alternative hypothesis.</p>
+                                                <p>The hypothesis tests prove that the prices of houses for rent in Lagos vary depending on the city it is located in, the type of house, the number of bedrooms and if the building is a new (or newly renovated) or an old building.</p>
+                                                <h2 id="heading-analysing-the-data">Analysing the Data</h2>
+                                                <p>I started by plotting a bar chart of the average price per number of bedrooms.</p>
+                                                <p>
+                                                    <img loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1663573727350/4r0LAJCyg.png?auto=compress,format&format=webp" alt="propertypro6.png"/>
+                                                </p>
+                                                <p>The bar chart shows a trend between the average price and the number of bedrooms in a property, the price increases as the number of rooms increases.</p>
+                                                <p>Doing the same thing with the "new" column shows that new buildings have a slightly higher average price compared to older buildings</p>
+                                                <p>
+                                                    <img loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1663573809808/kFThNXl4r.png?auto=compress,format&format=webp" alt="propertypro7.png"/>
+                                                </p>
+                                                <p>Investigating the distribution of house types per city showed that the house types are randomly distributed with some cities having only one house type. "Flats &amp;Apartments" had the largest proportion in every city.</p>
+                                                <p>Investigating the distribution of cities per house type showed that:</p>
+                                                <ol>
+                                                    <li>
+                                                        <p>"Ajah" has the highest proportion of Bungalows (20%).</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>"Lekki" has the highest proportion of Duplexes (47%).</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>"Lekki" has the highest proportion of Flats &amp;Apartments (17%).</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>"Ikoyi" has the highest proportion of Maisonettes (60%).</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>"Ikoyi" has the highest proportion of Mansions (71%).</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>"Ikoyi" has the highest proportion of Penthouses (39%).</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>"Lekki" has the highest proportions of Self Contain (21%) with Yaba coming as a close second with 16%.</p>
+                                                    </li>
+                                                </ol>
+                                                <h2 id="heading-visualisation">Visualisation</h2>
+                                                <p>
+                                                    <img loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1684184607542/ecae1cd0-d9f2-4dd6-b5d1-b8b0eb5f5bcd.jpeg?auto=compress,format&format=webp" alt class="image--center mx-auto"/>
+                                                </p>
+                                                <p>
+                                                    The heatmap comparing the average price of different house types in all cities in Lagos shows that the average price of <strong>Duplexes</strong>
+                                                    in Lagos is relatively high compared to other house types in contrast to <strong>Self Contains</strong>
+                                                    which has a relatively low average price in all cities.
+                                                </p>
+                                                <p>
+                                                    <strong>Ikoyi</strong>
+                                                    and <strong>Victoria Island</strong>
+                                                    have relatively high average prices for all house types and are the most expensive cities to live in in Lagos.
+                                                </p>
+
+                                                <p>In conclusion, this project not only provides a comprehensive overview of the 
+                                                    current state of house rent in Lagos but also equips stakeholders
+                                                     with actionable insights for strategic decision-making. From prospective 
+                                                     tenants seeking affordable housing options to property owners aiming to
+                                                      optimize rental returns, the analysis serves as a valuable
+                                                       resource for navigating the dynamic Lagos real estate market.
+                                                </p>
+                                            
+                                
+                                                <p> <em>The code utilized for the analysis and the dataset employed in this project are available upon request. Please feel free to reach out for access to these resources. </em> </p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </section>
+                            </div>
+                          
+                           
+                        </article>
+                    </main>
+                </div>
+            </div>
+        </div>
+       
+      
+            <div id="hn-modal"></div>
+            <div id="hn-toast"></div>
+        </body>
+    </html>
